@@ -1,0 +1,154 @@
+
+
+body{
+  margin:0;
+  padding:0;
+  background-color: antiquewhite;
+}
+
+.header {
+  background-color: rgb(127, 129, 255);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.header .logo{
+  width: 5%;
+}
+
+.about{
+  margin-left: auto;
+}
+
+.header > a {
+  align-self: center;
+  font-size: large;
+  color: white;
+}
+
+
+button {
+  border-radius: 5px;
+  width: auto;
+  height: fit-content;
+  align-self: center;
+  padding: 2px;
+  margin: 2px;
+  background-color: rgb(199, 28, 15);
+  font-size: large;
+}
+
+.hero{
+  display: flex;
+  margin:5px;
+  padding: 5px;
+
+}
+.hero > img {
+    border-radius: 50px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.courseDetails{
+  margin-left: auto;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h4, h1, h3, h2 {
+  align-self: center;
+  text-align: center;
+  margin: 10px;
+}
+.courseDetails h4{
+  color: brown;
+}
+
+.courseDetails h1{
+  font-family: "Chela One", sans-serif;
+  font-size: 3rem;
+}
+.details{
+  display: flex;
+  background-color: rgb(210, 221, 221);
+  padding: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+
+
+.courseInfo{
+  align-self: center;
+}
+
+.price{
+  background-color: rgb(127, 129, 255);
+  padding: 20px;
+}
+.demoVideo{
+  text-align: center;
+  padding: 10px;
+}
+
+video{
+  width:75%;
+}
+
+#program{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#program p{
+  font-size: large;
+}
+
+.aboutCourse{
+  padding:auto;
+  margin-right:auto;
+}
+
+.aboutCourse li{
+  text-align: start;
+  margin: 5px;
+  padding: 5px;
+}
+
+.programDetails{
+  background-color: rgb(127, 129, 255);
+  margin:auto;
+  padding:auto;
+  width:20%;
+}
+
+#mentors{
+  display: grid;
+  text-align: center;
+  grid-template-areas:
+    'header header header '
+    'main middle right';
+    margin:10px;
+}
+
+.mentor{
+  grid-area: header;
+}
+
+.blueText{
+  color:blue;
+}
+
+.mentors p{
+  margin:0;
+  padding:0;
+}
+#aboutUs{
+  text-align: center;
+  background-color: aliceblue;
+}
