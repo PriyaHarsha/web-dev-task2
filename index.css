@@ -12,6 +12,8 @@ body{
   display: flex;
   justify-content: flex-start;
   gap: 25px;
+  padding-right: 20px;
+
 }
 .header .logo{
   width: 5%;
@@ -30,7 +32,7 @@ body{
 
 button {
   border-radius: 5px;
-  width: auto;
+  width: fit-content;
   height: fit-content;
   align-self: center;
   padding: 2px;
@@ -151,4 +153,77 @@ video{
 #aboutUs{
   text-align: center;
   background-color: aliceblue;
+  width:100%;
 }
+
+#popup-window {
+  position: fixed;
+  width: 500px;
+  height: 300px;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}     
+
+form > div {
+  margin:20px;
+}
+
+@media all and (max-width:720px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+  }
+
+  .hero{
+    flex-direction: column-reverse;
+  }
+
+  .about{
+    margin:0;
+  }
+
+  .header .logo{
+    width:20%;
+    align-self: center;
+  }
+
+  .courseDetails{
+    margin:0;
+    width:100%;
+  }
+
+  #program{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programDetails{
+    width: 100%;
+  }
+  .price{
+    width:100%;
+  }
+  .details{
+    flex-direction: column;
+  }
+
+  #mentors{
+    display: inline;
+  }
+  #popup-window {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
